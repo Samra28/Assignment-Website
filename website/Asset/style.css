@@ -1,0 +1,349 @@
+*{
+  margin: 0;
+ box-sizing: border-box; 
+ padding: 0;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+ outline: none;
+ border: none;
+ text-transform: capitalize;
+ transition: 0.2s linear;
+}
+:root{
+  --black: #000000;
+}
+header{
+  position: relative;
+  top: 0; left: 0; right: 0;
+  background-color: #ac8d8d;
+  padding: 1rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+header .logo{
+  font-size: 28px;
+  color: rgb(5, 5, 5);
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+header .logo span{
+  color: var(--black);
+}
+header .navbar a{
+  font-size: 20px;
+  padding: 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+header .navbar a:hover{
+  color: browns ;
+}
+header .icons i{
+ font-size: 18px;
+color: #ffffff;
+margin-left: 20px;
+}
+section{
+  padding: 5rem 9%;
+}
+.home{
+  display: flex;
+  align-items: center;
+  background-image:url(image/12345.jpeg) ;
+  max-height: 100vh;
+  background-size: cover;
+  background-position:center; 
+}
+.home .content{
+  max-width: 50rem;
+}
+.home .content h3{
+  font-size: 34px;
+  color: #020202;
+}
+.home .content span{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  line-height: 2;
+}
+.home .content p{
+  font-size: 18px;
+  color: #000000;
+  
+}
+section{
+  padding: 2rem;
+  
+}
+
+.heading{
+  text-align: center;
+  font-size: 2rem;
+  color: #000;
+  padding: 1rem;
+  margin: 1rem;  
+}
+
+.btn{
+display: inline-block;
+margin-top: 2rem;
+border-radius: 5px;
+background-color: rgb(133, 125, 125);
+color: rgb(255, 218, 6);
+padding: 5px 5px;
+text-decoration: none;
+}
+.btn:hover{
+  background-color: rgb(26, 23, 24);
+}
+footer{
+  background-color:#dfd8d8;
+  box-shadow: #575656;
+  border-radius: 5px 5px;
+}
+.footer-container{
+  width: 100%;
+  padding: 10px 5px;
+ 
+}
+.social{
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+  
+}
+.social i{
+text-decoration: none;
+padding: 10px;
+background-color: white;
+margin: 10px;
+border-radius: 50%;
+font-size: 2rem;
+opacity: 0.9;
+color: rgb(0, 0, 0);
+
+}
+.social i:hover{
+  background-color: #e5cef5;
+  transition: 0.2s linear;
+}
+.social i:hover i{
+  color: white;
+  transition: 0.2s linear;
+}
+.footernav{
+  margin: 30px;
+  
+}
+.footernav ul{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+
+  list-style: none;
+
+}
+.footernav ul li a{
+  color: var(--black);
+  margin: 20px;
+  text-decoration: none;
+  font-size: 22px;
+  
+}
+
+.Menu .card-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+
+}
+.Menu .heading {
+  border: rgb(218, 200, 41);
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.Menu .heading span{
+  color: var(--brown);
+}
+.Menu .card-container .card{
+  flex: 2 2 6rem;
+  box-shadow: 0 .5rem 1.5rem rgb(0, 0, 0);
+  border-radius: .5rem;
+  border: .1rem solid #000000;
+  position: relative;
+}
+.Menu .card-container .card .discount{
+
+  top: 6px ; left: 6px;
+  padding: 4px 2px;
+  font-size: 12px;
+  color: var(--brown);
+  background-color: #f7f4f1;
+  z-index: 1;
+  border-radius: 2px;
+}
+.Menu .card-container .card .image{
+  position: relative;
+  text-align: center;
+ overflow: hidden; 
+
+}
+.Menu .card-container .card .image img:hover{
+  transform: scale(1.1);
+  
+}
+.Menu .card-container .card .image .icons{
+
+  position: absolute;
+  bottom: -7rem; left: 0; right: 0;
+  display: flex;
+  
+}
+.Menu .card-container .card:hover .image .icons{
+bottom: 0;
+
+}
+.Menu .card-container .card .image .icons i{
+  height: 40px;
+  line-height: 3rem;
+  font-size: 16px;
+  width: 60%;
+  background: rgb(230, 233, 72);
+  color: #fff;
+
+}
+.Menu .card-container .card .image .icons .card-btn{
+border-left: .1rem solid rgba(0, 0, 0, 0.467);
+border-right: .1rem solid rgba(0, 0, 0, 0.467);
+width: 100%;
+
+}
+.Menu .card-container .card .image .icons i:hover{
+  background: rgb(3, 3, 3);
+}
+.Menu .card-container .card .content{
+  padding: 1rem;
+  text-align: center;  
+}
+.Menu .card-container .card .content h3{
+  font: 16px;
+  color: #0a0a0a;
+}
+.Menu .card-container .card .content .price{
+  font: 16px;
+  color: var(--black);
+  font-weight: bolder;
+  padding-top: 10px;
+}
+.Menu .card-container .card .content .price span{
+  font: 12px;
+  color: black;
+  font-weight: lighter;
+  text-decoration: line-through;
+}
+.review .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.review .box-container .box{
+  flex: 1 1 30rem;
+  box-shadow: 5px 8px 5px 8px #887a7a;
+  border-radius: 5px;
+  padding: 2rem 1rem;
+  position: relative;
+  border: 5px solid #0c0c0c;
+}
+.review .box-container .box .user{
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+.review .box-container .box .stars i{
+
+  color:yellow;
+  font-size: 1rem;
+}
+.review .box-container .box p{
+
+  color:rgb(0, 0, 0);
+  font-size: 18px;
+  line-height: 1.5;
+  padding-top: 1rem;
+
+}
+.review .box-container .box .user{
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.review .box-container .box .user img{
+height: 6rem;
+width: 6rem;
+border-radius: 50%;
+object-fit: cover;
+margin-right: 1rem;
+}
+.review .box-container .box .user h3{
+  font-size: 2rem;
+color:black;
+}
+.review .box-container .box .user span{
+  font-size: 18px;
+  color:black;
+}
+.review .heading {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.review .heading span{
+  color: var(--black);
+}
+.contact .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+.contact .row form{
+  flex: 1 1 40rem;
+  padding: 5em 5rem;
+  box-shadow: 5px 3px 5px 3px rgb(175, 166, 166);
+  border: 2px solid #000000;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.contact  .row form .box{
+  padding: 1rem;
+  font-size: 18px;
+  color: burlywoods;
+  text-transform: none;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: .5rem;
+  margin: 5px 0;
+  width: 100%;
+}
+.contact .row form .box:focus{
+  background-color: rgb(168, 151, 151);
+
+}
+.contact .heading {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact .heading span{
+  color: var(--brown);
+}
+
+  
+
